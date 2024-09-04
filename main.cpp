@@ -58,12 +58,12 @@ public:
             }
         }
     }
-   
+
     void showResults() {
         cout << "Name: " << name << ", Party: " << politicalParty
              << ", Role: " << role << ", Votes: " << voteCount << endl;
     }
-   
+
     int getVoteCount() { return voteCount; }
 
     void setVoteCount(int count) { voteCount = count; }
@@ -466,19 +466,10 @@ int main() {
             case 10:
                 admin.clearCandidates();
                 break;
-            case 11:
+            case 12:
                 admin.clearVoters();
                 break;
-       
-            case 12:
-                {
-                    string newPassword;
-                    cout << "Enter new password: ";
-                    cin >> newPassword;
-                    admin.changePassword(newPassword);
-                    cout << "Password changed successfully!" << endl;
-                }
-                break;
+
             case 13:
                 return 0;
             default:
